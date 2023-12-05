@@ -26,7 +26,6 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
         <li>University of Information Technology & Sciences, Dhaka, Bangladesh</li>
       </ul>
     ),
@@ -36,8 +35,8 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>JavaScript Algorithms and Data Structures -freeCodeCamp</li>
+        <li>The Complete Node JS Course - Batch-1 -Pondit</li>
       </ul>
     ),
   },
