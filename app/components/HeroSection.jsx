@@ -28,9 +28,9 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I have completed my bachelor's in Computer Science and Engineering
-            from the University of Information Technology & Sciences. I am a
-            trainee at the Vivasoft Learnathon 2.0 program.
+            I have completed my bachelor&apos;s in Computer Science and
+            Engineering from the University of Information Technology &
+            Sciences. I am a trainee at the Vivasoft Learnathon 2.0 program.
           </p>
           <div>
             <Link
