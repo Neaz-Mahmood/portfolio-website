@@ -1,18 +1,19 @@
-"use client";
-import React, { useState, useRef } from "react";
-import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
-import { motion, useInView } from "framer-motion";
+"use client"
+import React, { useState, useRef } from "react"
+import ProjectCard from "./ProjectCard"
+import ProjectTag from "./ProjectTag"
+import { motion, useInView } from "framer-motion"
 
 const projectsData = [
   {
     id: 1,
     title: "React Portfolio Website",
     description: "Project 1 description",
-    image: "/images/projects/1.png",
+    image: "/images/projects/portfolio.PNG",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Neaz-Mahmood/portfolio-website",
-    previewUrl: "https://portfolio-website-kf1ln2s9g-neaz-mahmoods-projects.vercel.app",
+    previewUrl:
+      "https://portfolio-website-kf1ln2s9g-neaz-mahmoods-projects.vercel.app",
   },
   {
     id: 2,
@@ -32,28 +33,28 @@ const projectsData = [
     gitUrl: "https://github.com/Neaz-Mahmood/ecommerce-admin",
     previewUrl: "/",
   },
-];
+]
 
 const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const [tag, setTag] = useState("All")
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
 
   const handleTagChange = (newTag) => {
-    setTag(newTag);
-  };
+    setTag(newTag)
+  }
 
   const filteredProjects = projectsData.filter((project) =>
     project.tag.includes(tag)
-  );
+  )
 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
     animate: { y: 0, opacity: 1 },
-  };
+  }
 
   return (
-    <section id="projects">
+    <section id="projects" className="mx-12">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
@@ -90,7 +91,7 @@ const ProjectsSection = () => {
         ))}
       </ul>
     </section>
-  );
-};
+  )
+}
 
-export default ProjectsSection;
+export default ProjectsSection

@@ -1,7 +1,7 @@
-"use client";
-import React, { useTransition, useState } from "react";
-import Image from "next/image";
-import TabButton from "./TabButton";
+"use client"
+import React, { useTransition, useState } from "react"
+import Image from "next/image"
+import TabButton from "./TabButton"
 
 const TAB_DATA = [
   {
@@ -26,7 +26,9 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>University of Information Technology & Sciences, Dhaka, Bangladesh</li>
+        <li>
+          University of Information Technology & Sciences, Dhaka, Bangladesh
+        </li>
       </ul>
     ),
   },
@@ -40,20 +42,20 @@ const TAB_DATA = [
       </ul>
     ),
   },
-];
+]
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
-  const [isPending, startTransition] = useTransition();
+  const [tab, setTab] = useState("skills")
+  const [isPending, startTransition] = useTransition()
 
   const handleTabChange = (id) => {
     startTransition(() => {
-      setTab(id);
-    });
-  };
+      setTab(id)
+    })
+  }
 
   return (
-    <section className="text-white" id="about">
+    <section className="text-white mx-12" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image src="/images/about-image.jpg" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
@@ -95,7 +97,7 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default AboutSection;
+export default AboutSection
